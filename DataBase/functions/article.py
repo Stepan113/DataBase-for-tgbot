@@ -64,4 +64,4 @@ class Article(object):
     def __get_text(self, name_file: str) -> str:
         with open(name_file, "r+", encoding="utf-8") as file:
             text = file.readlines()
-            return "\n".join(text)
+            return "".join(text)
